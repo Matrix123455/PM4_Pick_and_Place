@@ -88,13 +88,6 @@
 | pmic@zhaw.ch  | wuem@zhaw.ch     | hurc@zhaw.ch  |
 | TE 307        | TE 301           | TE 307        |
 
-Big shoutout to Maciej Szarek for his help and the support (https://github.com/szar99).
-
-<p align="center">
-    <img src="docs/images/fast_prototyping.jpg" alt="Fast Prototyping does not have to be perfect" width="650"/> </br>
-    <i>Fast Prototyping does not have to be perfect</i>
-</p>
-
 Fast prototyping in robotics focuses on quickly building and testing a simple version of the system rather than aiming for perfection from the start. Through iterative development, each prototype helps identify and fix issues, leading to gradual improvements. This approach saves time and cost, encourages experimentation, and ensures that the final design is optimized based on real-world performance. Additionally, hardware and software evolve together, allowing adjustments to both as new challenges arise. Instead of spending too much time planning, build, test, and refine — learning from each iteration.
 
 # Table of Contents
