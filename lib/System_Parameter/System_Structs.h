@@ -40,16 +40,6 @@
      bool distance_valid_Rear;      ///< Validity of the rear IR measurement.
  };
  
- /**
-  * @brief       Structure to return line following information.
-  */
- struct LineFollowerOut {
-     float velocityright;           ///< Velocity for the right wheel [m/s].
-     float velocityleft;            ///< Velocity for the left wheel [m/s].
-     bool line_found;               ///< true = line detected.
-     bool follow_active;            ///< true = line following active.
- };
- 
  // =============================================================================
  // Global Control Flags (externally defined)
  // =============================================================================

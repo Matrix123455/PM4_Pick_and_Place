@@ -22,7 +22,6 @@
  #include "mbed.h"
  #include "DCMotor.h"
  #include "Servo.h"
- #include "LineFollower.h"
  #include "DebounceIn.h"
  #include "UltrasonicSensor.h"
  #include "IRSensor.h"
@@ -63,11 +62,6 @@
  // =============================================================================
  // Sensors
  // =============================================================================
- 
- /**
-  * @brief       Line follower sensor.
-  */
- extern LineFollower lineFollower;
  
  /**
   * @brief       Ultrasonic sensor for distance measurement.

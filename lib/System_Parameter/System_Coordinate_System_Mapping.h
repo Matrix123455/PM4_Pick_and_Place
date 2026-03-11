@@ -60,9 +60,17 @@ extern const float BASE_ORIGIN_Z_MM;            ///< Global base origin Z [mm]
 extern const uint8_t TRAY_ROWS;                 ///< Number of tray rows
 extern const uint8_t TRAY_COLUMNS;              ///< Number of tray columns
 
-extern const float TRAY_ORIGIN_X_MM;            ///< X coordinate of tray reference position [mm]
-extern const float TRAY_ORIGIN_Y_MM;            ///< Y coordinate of tray reference position [mm]
-extern const float TRAY_ORIGIN_Z_MM;            ///< Z coordinate of tray top reference [mm]
+extern const float INPUT_TRAY_ORIGIN_X_MM;             ///< X coordinate of tray reference position [mm]
+extern const float INPUT_TRAY_ORIGIN_Y_MM;             ///< Y coordinate of tray reference position [mm]
+extern const float INPUT_TRAY_ORIGIN_Z_MM;             ///< Z coordinate of tray top reference [mm]
+
+extern const float OUTPUT_TRAY_ORIGIN_X_MM;            ///< X coordinate of tray reference position [mm]
+extern const float OUTPUT_TRAY_ORIGIN_Y_MM;            ///< Y coordinate of tray reference position [mm]
+extern const float OUTPUT_TRAY_ORIGIN_Z_MM;            ///< Z coordinate of tray top reference [mm]
+
+extern const float OUTPUT_BAD_TRAY_ORIGIN_X_MM;        ///< X coordinate of tray reference position [mm]
+extern const float OUTPUT_BAD_TRAY_ORIGIN_Y_MM;        ///< Y coordinate of tray reference position [mm]
+extern const float OUTPUT_BAD_TRAY_ORIGIN_Z_MM;        ///< Z coordinate of tray top reference [mm]
 
 extern const float TRAY_OFFSET_X_MM;            ///< Column spacing in X direction [mm]
 extern const float TRAY_OFFSET_Y_MM;            ///< Row spacing in Y direction [mm]

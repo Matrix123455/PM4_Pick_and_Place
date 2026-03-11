@@ -108,7 +108,7 @@
  // State Machine
  // =============================================================================
  SystemState    system_state             = STOPPED;
- ExecuteState   execute_state           = CHECK_FOR_LINE;
+ ExecuteState   execute_state            = HOME;
  ExecuteState   State_History[STATE_HISTORY_ARRAY_LENGTH];
  
  // =============================================================================
@@ -133,7 +133,6 @@
  // =============================================================================
  // Sensors & I/O
  // =============================================================================
- LineFollower     lineFollower(PB_9, PB_8, BAR_DIST, D_WHEEL, B_WHEEL, M1_DriveLeft.getMaxPhysicalVelocity());
  UltrasonicSensor DistanceSensor(PB_D3);
  IRSensor         IRFront(PC_2);
  IRSensor         IRRear(PC_3);

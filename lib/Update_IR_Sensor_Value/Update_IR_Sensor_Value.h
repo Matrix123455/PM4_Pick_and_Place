@@ -23,7 +23,7 @@
  #ifndef UPDATE_DISTANCE_MEASUREMENT_VALUE_H_
  #define UPDATE_DISTANCE_MEASUREMENT_VALUE_H_
  
- #include "Robot_Structs.h"
+ #include "System_Structs.h"
  #include "AvgFilter.h"
  
  // =============================================================================

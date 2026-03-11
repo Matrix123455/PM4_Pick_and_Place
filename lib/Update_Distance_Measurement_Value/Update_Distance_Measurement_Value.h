@@ -25,8 +25,8 @@
  
  #include "mbed.h"
  #include "AvgFilter.h"
- #include "Robot_Structs.h"
- #include "Robot_const.h"
+ #include "System_Structs.h"
+ #include "System_const.h"
  
  // =============================================================================
  // Configuration
