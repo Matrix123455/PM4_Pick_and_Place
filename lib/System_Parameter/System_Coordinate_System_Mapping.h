@@ -41,8 +41,15 @@ struct CartesianPosition_t
 
 struct TrayIndex_t
 {
-    uint8_t row;      ///< Tray row index
-    uint8_t column;   ///< Tray column index
+    int row;      ///< Tray row index
+    int column;   ///< Tray column index
+};
+
+enum TrayType_t
+{
+    INPUT_TRAY,
+    OUTPUT_TRAY,
+    OUTPUT_BAD_TRAY
 };
 
 // =============================================================================
@@ -57,8 +64,8 @@ extern const float BASE_ORIGIN_Z_MM;            ///< Global base origin Z [mm]
 // Tray Geometry and Mapping
 // =============================================================================
 
-extern const uint8_t TRAY_ROWS;                 ///< Number of tray rows
-extern const uint8_t TRAY_COLUMNS;              ///< Number of tray columns
+extern const int TRAY_ROWS;                 ///< Number of tray rows
+extern const int TRAY_COLUMNS;              ///< Number of tray columns
 
 extern const float INPUT_TRAY_ORIGIN_X_MM;             ///< X coordinate of tray reference position [mm]
 extern const float INPUT_TRAY_ORIGIN_Y_MM;             ///< Y coordinate of tray reference position [mm]
@@ -117,7 +124,7 @@ extern const float END_PLATE_DISTANCE;          ///< Distance from end of plate 
  * @param   column  Tray column index
  * @return  CartesianPosition_t with absolute XYZ coordinates
  */
-CartesianPosition_t GetTrayPickPosition(uint8_t row, uint8_t column);
+CartesianPosition_t GetTrayPickPosition(TrayType_t tray, int row, int column);
 
 /**
  * @brief   Returns the safe position above a vial in the tray.
@@ -126,7 +133,7 @@ CartesianPosition_t GetTrayPickPosition(uint8_t row, uint8_t column);
  * @param   column  Tray column index
  * @return  CartesianPosition_t with absolute XYZ coordinates
  */
-CartesianPosition_t GetTraySafePosition(uint8_t row, uint8_t column);
+CartesianPosition_t GetTraySafePosition(TrayType_t tray, int row, int column);
 
 /**
  * @brief   Returns the place position of the sample holder.
@@ -149,6 +156,6 @@ CartesianPosition_t GetHolderSafePosition(void);
  * @param   column  Tray column index
  * @return  true if valid, otherwise false
  */
-bool IsValidTrayIndex(uint8_t row, uint8_t column);
+bool IsValidTrayIndex(int row, int column);
 
 #endif // SYSTEM_COORDINATE_SYSTEM_MAPPING_H_
