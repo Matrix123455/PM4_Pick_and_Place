@@ -78,6 +78,22 @@ const float LIFT_SERVO_LINEFOLLOWER_UPPER_POSITION  = 0.0f;
 
 const float SERVO_MOVE_TIME                         = 3.0f;
 
+ // =============================================================================
+ // SCARA Kinematics Parameters
+ // =============================================================================
+
+const float SCARA_LINK_1_LENGTH_MM = 200.0f;        // ToDo
+const float SCARA_LINK_2_LENGTH_MM = 150.0f;        // ToDo
+
+const float SCARA_AXIS_1_MIN_DEG = 0.0f;            // ToDo
+const float SCARA_AXIS_1_MAX_DEG = 180.0f;          // ToDo
+
+const float SCARA_AXIS_2_MIN_DEG = 0.0f;            // ToDo
+const float SCARA_AXIS_2_MAX_DEG = 360.0f;          // ToDo
+
+const float SCARA_AXIS_2_BLOCK_MIN_DEG = 160.0f;    // ToDo
+const float SCARA_AXIS_2_BLOCK_MAX_DEG = 200.0f;    // ToDo
+
 // =============================================================================
 // IR Sensor Parameters
 // =============================================================================

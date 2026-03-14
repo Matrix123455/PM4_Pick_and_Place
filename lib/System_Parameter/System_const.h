@@ -84,6 +84,22 @@
  extern const float SERVO_MOVE_TIME;
  
  // =============================================================================
+ // SCARA Kinematics Parameters
+ // =============================================================================
+
+ extern const float SCARA_LINK_1_LENGTH_MM;       ///< Length of arm 1 [mm]
+ extern const float SCARA_LINK_2_LENGTH_MM;       ///< Length of arm 2 [mm]
+
+ extern const float SCARA_AXIS_1_MIN_DEG;         ///< Minimum angle axis 1 [deg]
+ extern const float SCARA_AXIS_1_MAX_DEG;         ///< Maximum angle axis 1 [deg]
+
+ extern const float SCARA_AXIS_2_MIN_DEG;         ///< Minimum angle axis 2 [deg]
+ extern const float SCARA_AXIS_2_MAX_DEG;         ///< Maximum angle axis 2 [deg]
+
+ extern const float SCARA_AXIS_2_BLOCK_MIN_DEG;   ///< Forbidden range start [deg]
+ extern const float SCARA_AXIS_2_BLOCK_MAX_DEG;   ///< Forbidden range end [deg]
+
+ // =============================================================================
  // IR Sensor – Sensor Parameters
  // =============================================================================
  
